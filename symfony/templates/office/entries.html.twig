@@ -2,12 +2,18 @@
 {% block title %}Officina - Office Rental{% endblock %}
 {% block stylesheets %}
     <style>
+<<<<<<< HEAD
+        .view-offices-section{
+            overflow: auto;
+            max-height: 450px;
+=======
         .nearby-list{
             max-height: 450px;
             margin-bottom: 10px;
             overflow:scroll;
             -webkit-overflow-scrolling: touch;
             overflow-x: hidden;
+>>>>>>> b5be893d09b9dd562994d6174c13ce885ce3ec94
         }
         .suggestions{
             z-index: 1000;
@@ -98,11 +104,28 @@
         <div class="section-title text-center mb-5">
             <h2>Available nearby Offices</h2>
             <div class="line mb-2"></div>
+<<<<<<< HEAD
+        </div>
+        <div class="row">
+            <div id='map' class="col-6">
+            </div>
+            <div class="col-6 view-offices-section">
+                <div class="col-md-12 col-lg-12 col-xl-12">
+                    {% for label, messages in app.flashes %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ label }}" role="alert">
+                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+=======
             <p>Discover all the exiting offices around you, just tap on an office the map will show you its location.</p>
         </div>
         <div class="container">
             <div class="row">
                 <div id='map' class="col-6">
+>>>>>>> b5be893d09b9dd562994d6174c13ce885ce3ec94
                 </div>
                 <div class="col-6">
                     <div class="col-md-12 col-lg-12 col-xl-12">
@@ -318,7 +341,6 @@
                             <img class="card-img" src="{{ asset('img/overlay/1.png') }}" alt="Card image">
                             <div class="card-img-overlay">
                                 <h3 class="card-title text-white">California</h3>
-                                <p class="card-text text-white">16 Properties</p>
                             </div>
                         </a>
                     </div>
@@ -329,7 +351,6 @@
                             <img class="card-img" src="{{ asset('img/overlay/2.png') }}" alt="Card image">
                             <div class="card-img-overlay">
                                 <h3 class="card-title text-white">New York</h3>
-                                <p class="card-text text-white">16 Properties</p>
                             </div>
                         </a>
                     </div>
@@ -340,7 +361,6 @@
                             <img class="card-img" src="{{ asset('img/overlay/3.png') }}" alt="Card image">
                             <div class="card-img-overlay">
                                 <h3 class="card-title text-white">Los Angeles</h3>
-                                <p class="card-text text-white">265 Properties</p>
                             </div>
                         </a>
                     </div>
